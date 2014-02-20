@@ -1,7 +1,7 @@
-QTXbee
+QtXbee
 ======
 
-A QT 5.1 API Library for use with XBee DigiMesh modems 
+A Qt 5.1 API Library for use with XBee DigiMesh modems 
 
 The code has been tested against XBEE PRO 900HP modems running Version 8067.
 
