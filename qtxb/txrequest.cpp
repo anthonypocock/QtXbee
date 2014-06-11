@@ -5,16 +5,18 @@ TXRequest::TXRequest(QObject *parent) :
     DigiMeshPacket(parent)
 {
     unsigned zero = 0x00;
-    destAddr16.append(0xFF);
-    destAddr16.append(0xFE);
+    unsigned oxff = 0xFF;
+    unsigned oxfe = 0xFE;
+    destAddr16.append(oxff);
+    destAddr16.append(oxfe);
     destAddr64.append(zero);
     destAddr64.append(zero);
     destAddr64.append(zero);
     destAddr64.append(zero);
     destAddr64.append(zero);
     destAddr64.append(zero);
-    destAddr64.append(0xFF);
-    destAddr64.append(0xFF);
+    destAddr64.append(oxff);
+    destAddr64.append(oxff);
 
     broadcastRadius = 1;
     transmitOptions = 0x00;
